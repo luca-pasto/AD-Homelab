@@ -12,3 +12,7 @@ Download and install Oracle VirtualBox and obtain both ISO files for [Windows Se
 <img src="Step-Images/step1-1.jpg" width="900"/>
 <img src="Step-Images/step1-2.jpg" width="900"/>
 
+**Step 2: Install and Configure Windows Server 2022**
+
+Install Windows Server Standard Evaluation (Desktop Experience), select the unallocated partition, and set an administrator password. Once signed into the admin account, enable guest editions via "Devices" -> "Insert Guest Additions CD Image..." -> via File Explorer select "CD Drive (D:)..." -> "VBox WindowsAdditions-amd64" -> select manual reboot after installation is complete. 
+
