@@ -26,7 +26,7 @@ Install Windows Server Standard Evaluation (Desktop Experience), select the unal
 
 From the Server Manager window select "Add roles and features" -> select the domain controller -> select "Active Directory Domain Services" and "Add Features" -> select Next until the Install button appears. Once the installation is complete a warning sign will appear to finish the initial configuration. Select "Promote this server to a domain controller" -> Deployment Configuration: "Add a new forest" -> enter a domain name -> set a DSRM password -> Next until Install which will prompt a restart. This is done correctly when the next sign-in shows "MYDOMAIN\Administrator". 
 
-<img src="Step-Images/step3-0.jpg" width="900"/>
+<img src="Step-Images/step3-0.png" width="900"/>
 <img src="Step-Images/step3-1.png" width="900"/>
 <img src="Step-Images/step3-2.png" width="900"/>
 <img src="Step-Images/step3-3.png" width="900"/>
