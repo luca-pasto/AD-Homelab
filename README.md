@@ -57,6 +57,11 @@ From Server Manager select Add Roles and Features -> select the desired domain c
 
 Use Server Manager to add the DHCP Server role and complete the installation using the default settings similar to the other services. Open the DHCP management console via Tools, expand IPv4, and create a new scope with a range of 172.16.0.100-200, using a subnet mask of 255.255.255.0 -> NEW SCOPE -> Name: 172.16.0.100-200 -> Start IP address: 172.16.0.100 -> End IP address: 172.16.0.200 -> Length: 24. Leave exclusions, delays, and lease duration at their default values, then configure DHCP options by setting the default gateway (router) to 172.16.0.1 and leaving WINS settings unchanged. Activate the scope, authorize the DHCP server in Active Directory, and refresh the console to confirm the service is running.
 
-
-
-
+<img src="Step-Images/step6-0.png" width="900"/>
+<img src="Step-Images/step6-1.png" width="900"/>
+<img src="Step-Images/step6-2.png" width="900"/>
+<img src="Step-Images/step6-3.png" width="900"/>
+<img src="Step-Images/step6-4.png" width="900"/>
+<img src="Step-Images/step6-5.png" width="900"/>
+<img src="Step-Images/step6-7.png" width="900"/>
+<img src="Step-Images/step6-8.png" width="900"/>
