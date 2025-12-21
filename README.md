@@ -63,5 +63,5 @@ Use Server Manager to add the DHCP Server role and complete the installation usi
 <img src="Step-Images/step6-3.png" width="900"/>
 <img src="Step-Images/step6-4.png" width="900"/>
 <img src="Step-Images/step6-5.png" width="900"/>
+<img src="Step-Images/step6-6.png" width="900"/>
 <img src="Step-Images/step6-7.png" width="900"/>
-<img src="Step-Images/step6-8.png" width="900"/>
