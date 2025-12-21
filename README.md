@@ -44,7 +44,7 @@ From the Server Manager select Tools -> Active Directory Users and Computers -> 
 
 **Step 5: Configure NAT/RAS**
 
-From Server Manager select Add Roles and Features -> select the desired domain controller -> in "Select server roles" check "Remote Access" -> click next until "Select role services" -> check the box for "Routing" and click "Add Features" in the new window -> next until Install option is available. Next go to "Tools" and select "Routing and Remote Access" -> right-click the domain controller and select "Configure and Enable..." -> select Network address translation (NAT) -> select Use this public interface to connect to the internet and make sure to select the home internet NIC to finish the configuration. 
+From Server Manager select Add Roles and Features -> select the desired domain controller -> in "Select server roles" check "Remote Access" -> click next until "Select role services" -> check the box for "Routing" and click "Add Features" in the new window -> next until Install option is available. Next go to "Tools" and select "Routing and Remote Access" -> right-click the domain controller and select "Configure and Enable..." -> select Network address translation (NAT) -> select "Use this public interface to connect to the internet" and make sure to select the home internet NIC to finish the configuration. A common issue is that the box will be blank, just close the window and retry the steps again or restart the VM. 
 
 
 
