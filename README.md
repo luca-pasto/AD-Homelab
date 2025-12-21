@@ -14,5 +14,11 @@ Download and install Oracle VirtualBox and obtain both ISO files for [Windows Se
 
 **Step 2: Install and Configure Windows Server 2022**
 
-Install Windows Server Standard Evaluation (Desktop Experience), select the unallocated partition, and set an administrator password. Once signed into the admin account, enable guest editions via "Devices" -> "Insert Guest Additions CD Image..." -> via File Explorer select "CD Drive (D:)..." -> "VBox WindowsAdditions-amd64" -> select manual reboot after installation is complete. Next will be renaming and assigning addresses to the two NICs which could be accessed via Settings -> Network & Internet -> Ethernet -> Change adapter options. 
+Install Windows Server Standard Evaluation (Desktop Experience), select the unallocated partition, and set an administrator password. Once signed into the admin account, enable guest editions via "Devices" -> "Insert Guest Additions CD Image..." -> via File Explorer select "CD Drive (D:)..." -> "VBox WindowsAdditions-amd64" -> select manual reboot after installation is complete. Next will be renaming and assigning addresses to the two NICs which could be accessed via Settings -> Network & Internet -> Ethernet -> Change adapter options. Both NICs should be renamed to easily identify the one connected to home internet and the internal network. The internal network NIC can be identified via right-click -> Status -> check for APIPA address of 169.254.X.X. This should be changed via Properties -> IPv4 (Properties) -> IP Address: 172.16.0.1 Subnet Mask: 255.255.255.0 Preferred DNS Server: 127.0.0.1. The home internet NIC can remain unchanged. 
 
+<img src="Step-Images/step2-0.jpg" width="900"/>
+<img src="Step-Images/step2-1.png" width="900"/>
+<img src="Step-Images/step2-2.png" width="900"/>
+<img src="Step-Images/step2-3.png" width="900"/>
+<img src="Step-Images/step2-4.png" width="900"/>
+<img src="Step-Images/step2-5.png" width="900"/>
