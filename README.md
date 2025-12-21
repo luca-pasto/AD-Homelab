@@ -34,3 +34,11 @@ From the Server Manager window select "Add roles and features" -> select the dom
 **Step 4: Create an Admin Account**
 
 From the Server Manager select Tools -> Active Directory Users and Computers -> right-click "mydomain.com" -> New -> Organizational Unit. Name the OU then uncheck the box for accidental deletion. While the OU folder is selected "Create a new user in the current container." -> enter a name and user logon name -> set a password and select never expire. This will then show a summary of the account where you can select "Finish". Next, right-click the account and select Properties -> Member Of -> Add... -> in "Select Groups" under the "Enter the object names to select" box enter "domain admins" and click "Check Names" -> "OK" -> "Apply". 
+
+<img src="Step-Images/step4-0.png" width="900"/>
+<img src="Step-Images/step4-1.png" width="900"/>
+<img src="Step-Images/step4-2.png" width="900"/>
+<img src="Step-Images/step4-3.png" width="900"/>
+<img src="Step-Images/step4-4.png" width="900"/>
+<img src="Step-Images/step4-6.png" width="900"/>
+
