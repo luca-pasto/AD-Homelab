@@ -65,3 +65,9 @@ Use Server Manager to add the DHCP Server role and complete the installation usi
 <img src="Step-Images/step6-5.png" width="900"/>
 <img src="Step-Images/step6-6.png" width="900"/>
 <img src="Step-Images/step6-7.png" width="900"/>
+
+**Step 7: Create Users Manually or via PowerShell/Python Scripts**
+
+Similar to creating an administrative account, standard user accounts can be created manually through Active Directory Users and Computers by creating an organizational unit, disabling accidental deletion, and using the New User wizard to assign usernames and passwords. For scalability, this can be done via a PowerShell script. This script automates Active Directory user creation by reading first and last names from a text file and generating standardized usernames. It formats usernames using the first letter of the first name and up to five characters of the last name, then checks Active Directory for existing accounts and appends a number if duplicates are found. The script creates an organizational unit if it does not already exist and provisions each user with a preset password, non-expiring credentials, and automatic placement into the designated OU.
+
+
