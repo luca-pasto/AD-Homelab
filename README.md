@@ -21,3 +21,7 @@ Install Windows Server Standard Evaluation (Desktop Experience), select the unal
 <img src="Step-Images/step2-2.png" width="900"/>
 <img src="Step-Images/step2-3.png" width="900"/>
 <img src="Step-Images/step2-4.png" width="900"/>
+
+**Step 3: Install and Configure Active Directory Services**
+
+From the Server Manager window select "Add roles and features" -> 
