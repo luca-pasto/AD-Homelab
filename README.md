@@ -80,3 +80,7 @@ Create the VM for the client in VirtualBox by clicking "New" -> select the Windo
 
 <img src="Step-Images/step8-0.png" width="900"/>
 <img src="Step-Images/step8-1.png" width="900"/>
+
+**Step 9: Join the System to the Domain**
+
+The final step will be to join the system to the domain via Settings -> System -> About -> Advanced System Settings -> Computer Name tab and selecting "Change...". This allows you to enter the desired domain and join to the internal network. Once joined to the domain it will prompt for the system to be restarted. Here you can join using one of the user credentials made through scripting or manual user creation. You can check if the system is routed correctly by pinging a well known website like google.com and verifying the DHCP lease in the domain controller concluding the homelab.
