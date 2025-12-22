@@ -72,6 +72,8 @@ Similar to creating an administrative account, standard user accounts can be cre
 
 To use the included PowerShell script from the desktop click on "Start" -> Windows PowerShell -> Windows PowerShell ISE -> right-click -> More -> "Run as administrator". Once it is open type "Set-Execution Policy Unrestricted" into the terminal and press enter. It will open a new window for the execution policy change -> select "Yes to All". The script can be used from the desktop with a names.txt file. 
 
-
+<img src="Step-Images/step7-0.png" width="900"/>
+<img src="Step-Images/step7-1.png" width="900"/>
+<img src="Step-Images/step7-2.png" width="900"/>
 
 
