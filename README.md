@@ -77,3 +77,6 @@ Similar to creating an administrative account, standard user accounts can be cre
 **Step 8: Create a Windows 11 Pro VM**
 
 Create the VM for the client in VirtualBox by clicking "New" -> select the Windows 11 ISO -> select "Skip Unattended Installation" -> assign appropriate CPU, RAM, and storage based on your system -> Set one network adapter and attach it to the Internal Network. Disable this adapter for now during the initial Windows 11 set up to bypass creating a microsoft account. Once the VM is launching press a button once prompted to use the ISO file. During the setup at the Product Key section select "I don't have a product key". Once at the language selection screen click on "Input" -> Keyboard -> Soft Keyboard... -> SHIFT + F10 -> Enter "OOBE\BYPASSNRO" into the command prompt. This will restart the VM and from the "Let's connect you to a network" screen allow you to select "I don't have internet". Once you reach the desktop using the local account, you can shut the VM down and enable the internal network adapter. 
+
+<img src="Step-Images/step8-0.png" width="900"/>
+<img src="Step-Images/step8-1.png" width="900"/>
