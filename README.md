@@ -6,7 +6,11 @@ This home lab uses Oracle VirtualBox to deploy a Windows Server domain controlle
 
 **Step 1: Set up the domain controller VM**
 
-Download and install Oracle VirtualBox and obtain both ISO files for [Windows Server 2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022) and [Windows 11](https://www.microsoft.com/en-us/software-download/windows11). Create the VM for the domain controller in VirtualBox by clicking "New" -> select the Windows Server 2022 ISO -> select "Skip Unattended Installation" -> assign appropriate CPU, RAM, and storage based on your system -> configure two network adapters (NAT & Internal Network).
+To configure the domain controller virtual machine first install the Oracle VirtualBox and the respective disk images (ISOs) for [Windows Server 2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022) and [Windows 11](https://www.microsoft.com/en-us/software-download/windows11). Once installed, a new virtual machine can be configured and have resources provisioned from your host computer. For the domain controller 4 CPU cores and 4GB of RAM are dedicated to the VM, but these settings can be changed to accommodate your system hardware specifications. It will also require two network adapters: one for your internet and another for the internal network. 
+
+- Click “New” -> ISO Image: “SERVER_EVAL_x64FRE_en-us.iso” -> Check “Skip Unattended Installation”
+- Select “Settings” -> Select “Network” -> Adapter 1, Attached to: NAT -> Adapter 2, Attached to: Internal Network
+
 
 <img src="Step-Images/step1-0.jpg" width="900"/>
 <img src="Step-Images/step1-1.jpg" width="900"/>
