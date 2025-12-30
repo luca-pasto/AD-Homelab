@@ -18,7 +18,7 @@ To configure the domain controller virtual machine first install the Oracle Virt
 
 **Step 2: Install and Configure Windows Server 2022**
 
-Run the virtual machine and allow it to boot into the Microsoft Server Operating System Setup screen. This will bring you to language selection and a user agreement. Afterwards, select “Windows Server 2022 Standard Evaluation (Desktop Experience)” once you reach the OS install menu. Next select the unallocated partition and set administrator credentials. Once you’ve finished the installation and signed into the admin account enable guest additions: 
+Run the virtual machine and allow it to boot into the Microsoft Server Operating System Setup screen. This will bring you to language selection and a user agreement. Afterwards, select “Windows Server 2022 Standard Evaluation (Desktop Experience)” once you reach the OS install menu. Next select the unallocated partition and set administrator credentials. Once you’ve finished the installation and signed into the admin account enable guest additions. This allows you to have quality of life features like resizing the virtual machine window.
 
 - Select “Devices” -> “Insert Guest Additions CD Image…” -> File Explorer: “CD Drive (D:)...” -> “Vbox Windows Additions-amd64” 
 - In the installation wizard click next until the installation button appears -> Select manual reboot once installation is complete
