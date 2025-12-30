@@ -29,7 +29,7 @@ Run the virtual machine and allow it to boot into the Microsoft Server Operating
 
 After guest additions have been installed, proceed to identifying and renaming the network adapters. These should be renamed to differentiate between the internet and the internal network. The internal network can be identified by viewing properties and looking for an APIPA address (169.254.xxx.xxx). The internal network should have its IPv4 settings changed for address, subnet mask, and DNS. 
 
-- Settings -> Network & Internet -> Ethernet -> “Change adapter options” -> Right-click adapter -> Status -> Check for APIPA address 
+- Settings -> Network & Internet -> Ethernet -> “Change adapter options” -> Right-click adapter -> Status
 - Change via “Properties” -> IP address: 172.16.0.1, Subnet Mask: 255.255.255.0, DNS server: 127.0.0.1
 
 <img src="Step-Images/step2-3.png" width="900"/>
