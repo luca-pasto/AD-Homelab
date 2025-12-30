@@ -18,13 +18,27 @@ To configure the domain controller virtual machine first install the Oracle Virt
 
 **Step 2: Install and Configure Windows Server 2022**
 
-Install Windows Server Standard Evaluation (Desktop Experience), select the unallocated partition, and set an administrator password. Once signed into the admin account, enable guest editions via "Devices" -> "Insert Guest Additions CD Image..." -> via File Explorer select "CD Drive (D:)..." -> "VBox WindowsAdditions-amd64" -> select manual reboot after installation is complete. Next will be renaming and assigning addresses to the two NICs which could be accessed via Settings -> Network & Internet -> Ethernet -> Change adapter options. Both NICs should be renamed to easily identify the one connected to home internet and the internal network. The internal network NIC can be identified via right-click -> Status -> check for APIPA address of 169.254.X.X. This should be changed via Properties -> IPv4 (Properties) -> IP Address: 172.16.0.1 Subnet Mask: 255.255.255.0 Preferred DNS Server: 127.0.0.1. The home internet NIC can remain unchanged. Lastly, rename the system via Settings -> System -> About -> Rename this PC -> Restart now. 
+Run the virtual machine and allow it to boot into the Microsoft Server Operating System Setup screen. This will bring you to language selection and a user agreement. Afterwards, select “Windows Server 2022 Standard Evaluation (Desktop Experience)” once you reach the OS install menu. Next select the unallocated partition and set administrator credentials. Once you’ve finished the installation and signed into the admin account enable guest additions: 
 
+- Select “Devices” -> “Insert Guest Additions CD Image…” -> File Explorer: “CD Drive (D:)...” -> “Vbox Windows Additions-amd64” 
+- In the installation wizard click next until the installation button appears -> Select manual reboot once installation is complete
+ 
 <img src="Step-Images/step2-0.jpg" width="900"/>
 <img src="Step-Images/step2-1.png" width="900"/>
 <img src="Step-Images/step2-2.png" width="900"/>
+
+After guest additions have been installed, proceed to identifying and renaming the network adapters. These should be renamed to differentiate between the internet and the internal network. The internal network can be identified by viewing properties and looking for an APIPA address (169.254.xxx.xxx). The internal network should have its IPv4 settings changed for address, subnet mask, and DNS. 
+
+- Settings -> Network & Internet -> Ethernet -> “Change adapter options” -> Right-click adapter -> Status -> Check for APIPA address 
+- Change via “Properties” -> IP address: 172.16.0.1, Subnet Mask: 255.255.255.0, DNS server: 127.0.0.1
+
 <img src="Step-Images/step2-3.png" width="900"/>
 <img src="Step-Images/step2-4.png" width="900"/>
+
+Lastly, rename the system to an appropriate system name i.e. DC1. This can be reached by going to: 
+- Settings -> System -> About -> "Rename this PC" -> Select "restart now" 
+
+
 
 **Step 3: Install and Configure Active Directory Services**
 
