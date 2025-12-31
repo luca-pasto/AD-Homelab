@@ -41,7 +41,13 @@ Lastly, rename the system to an appropriate system name i.e. DC1. This can be re
 
 **Step 3: Install and Configure Active Directory Services**
 
-From the Server Manager window select "Add roles and features" -> select the domain controller -> select "Active Directory Domain Services" and "Add Features" -> select Next until the Install button appears. Once the installation is complete a warning sign will appear to finish the initial configuration. Select "Promote this server to a domain controller" -> Deployment Configuration: "Add a new forest" -> enter a domain name -> set a DSRM password -> Next until Install which will prompt a restart. This is done correctly when the next sign-in shows "MYDOMAIN\Administrator". 
+From the Server Manager window, install Active Directory services and create a new domain, allowing the creation of organizational units and user accounts. Once the initial installation completes, a warning sign will appear prompting the system to be promoted to a domain controller. This allows the Windows server to act as the internal network's central point for authentication, user management, and security policies. 
+
+- Select “Add roles and features” -> Select the Windows server -> Select “Active Directory Domain Services” and click “Add Features” -> Click “Next”  until “Install” appears. 
+- Click “Promote this server…” -> Deployment Configuration: “Add new forest” -> Enter a root domain name -> Set a DSRM password -> Click “Next”  until “Install” appears. 
+
+Completing the steps above will prompt the system to restart. On the next sign-in, it will show the changes with the administrator account now showing “MYDOMAIN\Administrator”, confirming the installation.
+
 
 <img src="Step-Images/step3-0.png" width="900"/>
 <img src="Step-Images/step3-1.png" width="900"/>
