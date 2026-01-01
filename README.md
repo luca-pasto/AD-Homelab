@@ -56,12 +56,24 @@ Completing the steps above will prompt the system to restart. On the next sign-i
 
 **Step 4: Create an Admin Account**
 
-From the Server Manager select Tools -> Active Directory Users and Computers -> right-click "mydomain.com" -> New -> Organizational Unit. Name the OU then uncheck the box for accidental deletion. While the OU folder is selected "Create a new user in the current container." -> enter a name and user logon name -> set a password and select never expire. This will then show a summary of the account where you can select "Finish". Next, right-click the account and select Properties -> Member Of -> Add... -> in "Select Groups" under the "Enter the object names to select" box enter "domain admins" and click "Check Names" -> "OK" -> "Apply". Now that the admin account has been created, sign-in using the new credentials. 
+Now that the new domain is established, a new admin account should be created. This should be done to adhere to least privilege and allow for more accurate accounting and auditing. From the Server Manager window: 
+
+- Tools -> Active Directory Users and Computers -> Right-click “mydomain.com” -> New -> Organizational Unit (OU) -> Name the OU and uncheck accidental deletion
 
 <img src="Step-Images/step4-0.png" width="900"/>
 <img src="Step-Images/step4-1.png" width="900"/>
+
+Creating an OU serves as a container to organize users, computers, groups, and even other OUs. It allows admins to apply group policies and more efficiently manage resources without affecting the entire domain.  While the OU is selected, create the new user and give it admin privileges. 
+
+- “Create a new user in the current container” -> Enter a name and logon name -> set a password -> Click “Finish.”
+
 <img src="Step-Images/step4-2.png" width="900"/>
 <img src="Step-Images/step4-3.png" width="900"/>
+
+- Right-click account -> Properties -> Member of -> Add… -> in “Select Groups" under the "Enter the object names to select" box, enter "domain admins" and click "Check Names" -> "OK" -> click "Apply." 
+
+Once created, sign in to the new admin account using the provisioned credentials. 
+
 <img src="Step-Images/step4-4.png" width="900"/>
 <img src="Step-Images/step4-6.png" width="900"/>
 
