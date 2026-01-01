@@ -66,14 +66,12 @@ Now that the new domain is established, a new admin account should be created. T
 Creating an OU serves as a container to organize users, computers, groups, and even other OUs. It allows admins to apply group policies and more efficiently manage resources without affecting the entire domain.  While the OU is selected, create the new user and give it admin privileges. 
 
 - “Create a new user in the current container” -> Enter a name and logon name -> set a password -> Click “Finish.”
+- Right-click account -> Properties -> Member of -> Add… -> in “Select Groups" under the "Enter the object names to select" box, enter "domain admins" and click "Check Names" -> "OK" -> click "Apply." 
+
+Once created, sign in to the new admin account using the provisioned credentials.
 
 <img src="Step-Images/step4-2.png" width="900"/>
 <img src="Step-Images/step4-3.png" width="900"/>
-
-- Right-click account -> Properties -> Member of -> Add… -> in “Select Groups" under the "Enter the object names to select" box, enter "domain admins" and click "Check Names" -> "OK" -> click "Apply." 
-
-Once created, sign in to the new admin account using the provisioned credentials. 
-
 <img src="Step-Images/step4-4.png" width="900"/>
 <img src="Step-Images/step4-6.png" width="900"/>
 
