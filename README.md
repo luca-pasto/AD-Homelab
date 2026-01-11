@@ -3,16 +3,16 @@
 This home lab uses Oracle VirtualBox to deploy a Windows Server domain controller and a Windows client machine, with dual NICs configured for NAT and internal networking. Active Directory Domain Services, NAT/RAS, and DHCP are set up to create a new forest, manage organizational units, and provide network access for both internal and external connectivity. Optional Python and PowerShell scripts automate user creation and management, simulating enterprise Active Directory operations.
 
 ## Table of Contents:
-- [Step 1: Set up the domain controller VM](#step-1-set-up-the-domain-controller-vm)
-- [Step 2: Install and Configure Windows Server 2022](#step-2-install-and-configure-windows-server-2022)
-- [Step 3: Install and Configure Active Directory Services](#step-3-install-and-configure-active-directory-services)
-- [Step 4: Create an Admin Account](#step-4-create-an-admin-account)
-- [Step 5: Configure NAT/RAS](#step-5-configure-natras)
-- [Step 6: Configure DHCP](#step-6-configure-dhcp)
-- [Step 7: Create Users Manually or via Scripts](#step-7-create-users-manually-or-via-scripts)
-- [Step 8: Create a Windows 11 Pro VM](#step-8-create-a-windows-11-pro-vm)
-- [Step 9: Join the System to the Domain](#step-9-join-the-system-to-the-domain)
-- [Step 10: Conclusion](#step-10-conclusion)
+1. [Set up the domain controller VM](#step-1-set-up-the-domain-controller-vm)
+2. [Install and Configure Windows Server 2022](#step-2-install-and-configure-windows-server-2022)
+3. [Install and Configure Active Directory Services](#step-3-install-and-configure-active-directory-services)
+4. [Create an Admin Account](#step-4-create-an-admin-account)
+5. [Configure NAT/RAS](#step-5-configure-natras)
+6. [Configure DHCP](#step-6-configure-dhcp)
+7. [Create Users Manually or via Scripts](#step-7-create-users-manually-or-via-scripts)
+8. [Create a Windows 11 Pro VM](#step-8-create-a-windows-11-pro-vm)
+9. [Join the System to the Domain](#step-9-join-the-system-to-the-domain)
+10. [Conclusion](#step-10-conclusion)
 
 ## Technologies Used: 
 - Oracle VirtualBox
