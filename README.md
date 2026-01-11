@@ -6,6 +6,21 @@ This home lab uses Oracle VirtualBox to deploy a Windows Server domain controlle
 - [Step 1: Set up the domain controller VM](#step-1-set-up-the-domain-controller-vm)
 - [Step 2: Install and Configure Windows Server 2022](#step-2-install-and-configure-windows-server-2022)
 - [Step 3: Install and Configure Active Directory Services](#step-3-install-and-configure-active-directory-services)
+- [Step 4: Create an Admin Account](#step-4-create-an-admin-account)
+- [Step 5: Configure NAT/RAS](#step-5-configure-natras)
+- [Step 6: Configure DHCP](#step-6-configure-dhcp)
+- [Step 7: Create Users Manually or via Scripts](#step-7-create-users-manually-or-via-scripts)
+- [Step 8: Create a Windows 11 Pro VM](#step-8-create-a-windows-11-pro-vm)
+- [Step 9: Join the System to the Domain](#step-9-join-the-system-to-the-domain)
+- [Step 10: Conclusion](#step-10-conclusion)
+
+## Technologies Used: 
+- Oracle VirtualBox
+- Active Directory Services
+- Windows Server 2022
+- Windows 11 Pro
+- PowerShell
+- Python
 
 # Step 1: Set up the domain controller VM
 
@@ -48,7 +63,6 @@ From the Server Manager window, install Active Directory services and create a n
 - Click “Promote this server…” -> Deployment Configuration: “Add new forest” -> Enter a root domain name -> Set a DSRM password -> Click “Next”  until “Install” appears. 
 
 Completing the steps above will prompt the system to restart. On the next sign-in, it will show the changes with the administrator account now showing “MYDOMAIN\Administrator”, confirming the installation.
-
 
 <img src="Step-Images/step3-0.png" width="900"/>
 <img src="Step-Images/step3-1.png" width="900"/>
@@ -100,7 +114,7 @@ Use Server Manager to add the DHCP Server role and complete the installation usi
 <img src="Step-Images/step6-6.png" width="900"/>
 <img src="Step-Images/step6-7.png" width="900"/>
 
-# Step 7: Create Users Manually or via PowerShell/Python Scripts
+# Step 7: Create Users Manually or via Scripts
 
 Similar to creating an administrative account, standard user accounts can be created manually through Active Directory Users and Computers by creating an organizational unit, disabling accidental deletion, and using the New User wizard to assign usernames and passwords. For scalability, this can be done via a PowerShell script. This script automates Active Directory user creation by reading first and last names from a text file and generating standardized usernames. It formats usernames using the first letter of the first name and up to five characters of the last name, then checks Active Directory for existing accounts and appends a number if duplicates are found. The script creates an organizational unit if it does not already exist and provisions each user with a preset password, non-expiring credentials, and automatic placement into the designated OU. The text file can also be generated using Python scripting. In the example shown below, Python was used to collect the names from all of the NBA rosters from the ESPN website. It then formats each name into a list for Active Directory use. To use the included PowerShell script from the desktop, click on "Start" -> Windows PowerShell -> Windows PowerShell ISE -> right-click -> More -> "Run as administrator". Once it is open, type "Set-Execution Policy Unrestricted" into the terminal and press enter. It will open a new window for the execution policy change -> select "Yes to All". The script can be used from the desktop with a names.txt file. 
 
