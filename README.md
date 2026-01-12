@@ -131,7 +131,8 @@ Create the VM for the client in VirtualBox by clicking "New" -> select the Windo
 
 ### Step 9: Join the System to the Domain
 
-The final step will be to join the system to the domain via Settings -> System -> About -> Advanced System Settings -> Computer Name tab and selecting "Change...". This allows you to enter the desired domain and join the internal network. Once joined to the domain, it will prompt for the system to be restarted. 
+The final step will be to join the system to the domain via Settings -> System -> About -> Advanced System Settings -> Computer Name tab and selecting "Change...". This allows you to enter the desired domain and join the internal network. Once joined to the domain, it will prompt for the system to be restarted.
+
 <img src="Step-Images/step9-0.png" width="900"/>
 <img src="Step-Images/step9-1.png" width="900"/>
 
