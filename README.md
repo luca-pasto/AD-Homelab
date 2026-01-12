@@ -173,7 +173,7 @@ Python can optionally be used to generate the `names.txt` file (e.g., scraping N
 Create a Windows 11 Pro VM using the Windows 11 ISO. Configure the VM with a single **Internal Network** adapter and set it to disabled.
 
 During setup:
-- Bypass Microsoft account creation using `OOBE\BYPASSNRO`
+- Bypass Microsoft account creation using `SHIFT+F10 > CMD > OOBE\BYPASSNRO`
 - Complete setup with a local account
 - Enable the internal adapter after reaching the desktop
 
