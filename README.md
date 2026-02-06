@@ -203,8 +203,6 @@ Dynamic Host Configuration Protocol (DHCP) is a service that allows computers jo
 
 Users can be created manually through AD Users and Computers or the process can be automated through scripts using PowerShell. 
 
-### Scripted Approach
-
 The provided PowerShell script:
 - Reads names from a `names.txt` file via optional Python script
 - Generates standardized usernames
