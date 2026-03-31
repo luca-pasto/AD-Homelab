@@ -1,7 +1,5 @@
 # Active Directory: Installation and Configuration
 
-<img src="Step-Images/AD-Home Lab.jpg" width="900"/>
-
 ## Description
 This home lab demonstrates the deployment of a Windows Server–based Active Directory environment using Oracle VirtualBox. A Windows Server 2022 domain controller and a Windows 11 Pro client are configured with dual network adapters (NAT and Internal Network) to simulate enterprise-style internal and external connectivity. Core services include Active Directory Domain Services (AD DS), NAT/RAS, and DHCP. Optional PowerShell and Python scripts automate user creation to mirror real-world administrative workflows.
 
